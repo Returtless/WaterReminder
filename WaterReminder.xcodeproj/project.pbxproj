@@ -16,8 +16,9 @@
 		525995DD24A3979300230A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525995DB24A3979300230A86 /* LaunchScreen.storyboard */; };
 		525995E524A39A9900230A86 /* CircleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995E424A39A9900230A86 /* CircleIndicator.swift */; };
 		525995E724A39DEF00230A86 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995E624A39DEF00230A86 /* SettingsButton.swift */; };
-		525995EB24A3BCCD00230A86 /* DrinksMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EA24A3BCCD00230A86 /* DrinksMenuViewController.swift */; };
+		525995EB24A3BCCD00230A86 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EA24A3BCCD00230A86 /* StatusViewController.swift */; };
 		525995ED24A3CE7300230A86 /* DrinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */; };
+		525995EF24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EE24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,8 +33,9 @@
 		525995DE24A3979300230A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		525995E424A39A9900230A86 /* CircleIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIndicator.swift; sourceTree = "<group>"; };
 		525995E624A39DEF00230A86 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
-		525995EA24A3BCCD00230A86 /* DrinksMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksMenuViewController.swift; sourceTree = "<group>"; };
+		525995EA24A3BCCD00230A86 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCollectionViewCell.swift; sourceTree = "<group>"; };
+		525995EE24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatusViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,7 +79,8 @@
 				525995E424A39A9900230A86 /* CircleIndicator.swift */,
 				525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */,
 				525995E624A39DEF00230A86 /* SettingsButton.swift */,
-				525995EA24A3BCCD00230A86 /* DrinksMenuViewController.swift */,
+				525995EE24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift */,
+				525995EA24A3BCCD00230A86 /* StatusViewController.swift */,
 			);
 			path = WaterReminder;
 			sourceTree = "<group>";
@@ -154,11 +157,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				525995D224A3978D00230A86 /* ViewController.swift in Sources */,
+				525995EF24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift in Sources */,
 				525995CE24A3978D00230A86 /* AppDelegate.swift in Sources */,
 				525995D024A3978D00230A86 /* SceneDelegate.swift in Sources */,
 				525995E524A39A9900230A86 /* CircleIndicator.swift in Sources */,
 				525995E724A39DEF00230A86 /* SettingsButton.swift in Sources */,
-				525995EB24A3BCCD00230A86 /* DrinksMenuViewController.swift in Sources */,
+				525995EB24A3BCCD00230A86 /* StatusViewController.swift in Sources */,
 				525995D824A3978D00230A86 /* WaterReminder.xcdatamodeld in Sources */,
 				525995ED24A3CE7300230A86 /* DrinkCollectionViewCell.swift in Sources */,
 			);

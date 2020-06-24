@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Status View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StatusViewController" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="L7V-Ea-8g4" kind="presentation" id="5Wc-dA-r1V"/>
+                                    <action selector="addButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmd-Lx-tBN"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v6o-R4-Fip" customClass="CircleIndicator" customModule="WaterReminder" customModuleProvider="target">
@@ -75,25 +75,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                        </subviews>
-                        <color key="backgroundColor" red="0.46808701371006745" green="1" blue="0.6212149153555413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
-        </scene>
-        <!--Drinks Menu View Controller-->
-        <scene sceneID="CsN-E3-N8b">
-            <objects>
-                <viewController modalPresentationStyle="overFullScreen" id="L7V-Ea-8g4" customClass="DrinksMenuViewController" customModule="WaterReminder" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="xRF-jC-s8T">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Bkd-wN-c74">
-                                <rect key="frame" x="39" y="328" width="336" height="383"/>
+                                <rect key="frame" x="20" y="327" width="336" height="383"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="gGn-EG-5Lb">
@@ -108,7 +91,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="VuK-9p-A4R">
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
-                                            <autoresizingMask key="autoresizingMask"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-Mi-09p">
                                                     <rect key="frame" x="10.5" y="36.5" width="107.5" height="55"/>
@@ -116,29 +99,39 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wtu-E5-LW3">
+                                                    <rect key="frame" x="43" y="101.5" width="42" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Wtu-E5-LW3" firstAttribute="centerX" secondItem="VuK-9p-A4R" secondAttribute="centerX" id="4UE-Jz-bq2"/>
+                                                <constraint firstItem="Wtu-E5-LW3" firstAttribute="top" secondItem="Rqd-Mi-09p" secondAttribute="bottom" constant="10" id="LTX-mt-tYC"/>
                                                 <constraint firstItem="Rqd-Mi-09p" firstAttribute="centerY" secondItem="VuK-9p-A4R" secondAttribute="centerY" id="UJo-Dh-3hC"/>
                                                 <constraint firstItem="Rqd-Mi-09p" firstAttribute="centerX" secondItem="VuK-9p-A4R" secondAttribute="centerX" id="io6-OP-cB9"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <connections>
                                             <outlet property="nameLabel" destination="Rqd-Mi-09p" id="iZ0-1h-nbl"/>
+                                            <outlet property="volLabel" destination="Wtu-E5-LW3" id="TgM-zu-7dg"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="AHF-DL-Rjq"/>
+                        <color key="backgroundColor" red="0.46808701371006745" green="1" blue="0.6212149153555413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outlet property="menuCollectionView" destination="Bkd-wN-c74" id="v5c-Qf-LE3"/>
+                        <outlet property="menuCollectionView" destination="Bkd-wN-c74" id="18o-32-sBn"/>
+                        <outlet property="progressIndicator" destination="v6o-R4-Fip" id="RJu-uE-6WB"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vnM-jD-9Y3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="944.92753623188412" y="118.52678571428571"/>
+            <point key="canvasLocation" x="137.68115942028987" y="118.52678571428571"/>
         </scene>
     </scenes>
     <resources>

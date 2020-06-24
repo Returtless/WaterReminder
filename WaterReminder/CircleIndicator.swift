@@ -23,7 +23,7 @@ class CircleIndicator: UIView {
       private var progressLayer: CAShapeLayer!
       private var textLayer: CATextLayer!
       
-    public var progress: CGFloat = 0.3 {
+    public var progress: CGFloat! {
         didSet {
           didProgressUpdated()
         }
@@ -115,6 +115,7 @@ class CircleIndicator: UIView {
         
         textLayer?.string = "\(Int(progress * 100))"
         progressLayer?.strokeEnd = progress
+        layoutSubviews()
       }
     }
 

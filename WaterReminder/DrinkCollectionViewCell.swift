@@ -11,19 +11,12 @@ import UIKit
 class DrinkCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
-    weak var delegate: DrinksCollectionViewDelegate?
     
+    @IBOutlet weak var volLabel: UILabel!
     override func layoutSubviews() {
-        //let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         self.isUserInteractionEnabled = true
-      //  self.addGestureRecognizer(tapGestureRecognizer)
-      //  tapGestureRecognizer.cancelsTouchesInView = false
     }
-    
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
-      {
-        delegate!.onButtonTapped("")
-      }
+
 }
 
 
