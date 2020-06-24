@@ -14,6 +14,10 @@
 		525995D824A3978D00230A86 /* WaterReminder.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 525995D624A3978D00230A86 /* WaterReminder.xcdatamodeld */; };
 		525995DA24A3979300230A86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 525995D924A3979300230A86 /* Assets.xcassets */; };
 		525995DD24A3979300230A86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 525995DB24A3979300230A86 /* LaunchScreen.storyboard */; };
+		525995E524A39A9900230A86 /* CircleIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995E424A39A9900230A86 /* CircleIndicator.swift */; };
+		525995E724A39DEF00230A86 /* SettingsButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995E624A39DEF00230A86 /* SettingsButton.swift */; };
+		525995EB24A3BCCD00230A86 /* DrinksMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EA24A3BCCD00230A86 /* DrinksMenuViewController.swift */; };
+		525995ED24A3CE7300230A86 /* DrinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		525995D924A3979300230A86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		525995DC24A3979300230A86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		525995DE24A3979300230A86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		525995E424A39A9900230A86 /* CircleIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleIndicator.swift; sourceTree = "<group>"; };
+		525995E624A39DEF00230A86 /* SettingsButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsButton.swift; sourceTree = "<group>"; };
+		525995EA24A3BCCD00230A86 /* DrinksMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinksMenuViewController.swift; sourceTree = "<group>"; };
+		525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +74,10 @@
 				525995DB24A3979300230A86 /* LaunchScreen.storyboard */,
 				525995DE24A3979300230A86 /* Info.plist */,
 				525995D624A3978D00230A86 /* WaterReminder.xcdatamodeld */,
+				525995E424A39A9900230A86 /* CircleIndicator.swift */,
+				525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */,
+				525995E624A39DEF00230A86 /* SettingsButton.swift */,
+				525995EA24A3BCCD00230A86 /* DrinksMenuViewController.swift */,
 			);
 			path = WaterReminder;
 			sourceTree = "<group>";
@@ -144,7 +156,11 @@
 				525995D224A3978D00230A86 /* ViewController.swift in Sources */,
 				525995CE24A3978D00230A86 /* AppDelegate.swift in Sources */,
 				525995D024A3978D00230A86 /* SceneDelegate.swift in Sources */,
+				525995E524A39A9900230A86 /* CircleIndicator.swift in Sources */,
+				525995E724A39DEF00230A86 /* SettingsButton.swift in Sources */,
+				525995EB24A3BCCD00230A86 /* DrinksMenuViewController.swift in Sources */,
 				525995D824A3978D00230A86 /* WaterReminder.xcdatamodeld in Sources */,
+				525995ED24A3CE7300230A86 /* DrinkCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
