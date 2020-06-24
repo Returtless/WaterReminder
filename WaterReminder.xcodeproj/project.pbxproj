@@ -19,6 +19,7 @@
 		525995EB24A3BCCD00230A86 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EA24A3BCCD00230A86 /* StatusViewController.swift */; };
 		525995ED24A3CE7300230A86 /* DrinkCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */; };
 		525995EF24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995EE24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift */; };
+		525995F124A3FD2300230A86 /* UIColor+HEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525995F024A3FD2300230A86 /* UIColor+HEX.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		525995EA24A3BCCD00230A86 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		525995EC24A3CE7300230A86 /* DrinkCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrinkCollectionViewCell.swift; sourceTree = "<group>"; };
 		525995EE24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StatusViewController+UICollectionViewDataSource.swift"; sourceTree = "<group>"; };
+		525995F024A3FD2300230A86 /* UIColor+HEX.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HEX.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				525995E624A39DEF00230A86 /* SettingsButton.swift */,
 				525995EE24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift */,
 				525995EA24A3BCCD00230A86 /* StatusViewController.swift */,
+				525995F024A3FD2300230A86 /* UIColor+HEX.swift */,
 			);
 			path = WaterReminder;
 			sourceTree = "<group>";
@@ -157,6 +160,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				525995D224A3978D00230A86 /* ViewController.swift in Sources */,
+				525995F124A3FD2300230A86 /* UIColor+HEX.swift in Sources */,
 				525995EF24A3EE6C00230A86 /* StatusViewController+UICollectionViewDataSource.swift in Sources */,
 				525995CE24A3978D00230A86 /* AppDelegate.swift in Sources */,
 				525995D024A3978D00230A86 /* SceneDelegate.swift in Sources */,

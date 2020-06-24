@@ -8,7 +8,6 @@
 
 import UIKit
 
-@IBDesignable
 class CircleIndicator: UIView {
      
       @IBInspectable public lazy var backgroundCircleColor: UIColor = UIColor.lightGray

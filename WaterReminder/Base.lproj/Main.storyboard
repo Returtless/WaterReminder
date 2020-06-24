@@ -16,10 +16,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmj-8V-UVI" customClass="SettingsButton" customModule="WaterReminder" customModuleProvider="target">
-                                <rect key="frame" x="73" y="757" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmj-8V-UVI" customClass="SettingsButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="72.5" y="756.5" width="50" height="50.5"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.80392156862745101" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="2c4-QU-2cG"/>
+                                    <constraint firstAttribute="height" constant="50" id="jiz-sd-1Fo"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="gear" catalog="system"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -27,10 +31,13 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLn-I7-cL9" customClass="SettingsButton" customModule="WaterReminder" customModuleProvider="target">
-                                <rect key="frame" x="170" y="744" width="75" height="75"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lLn-I7-cL9" customClass="SettingsButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="169.5" y="744" width="75" height="75"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.52549019607843139" blue="0.52156862745098043" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="B7L-4x-pON"/>
+                                    <constraint firstAttribute="width" constant="75" id="N6K-Gd-I3A"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="57"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="+">
@@ -45,29 +52,36 @@
                                     <action selector="addButtonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xmd-Lx-tBN"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="v6o-R4-Fip" customClass="CircleIndicator" customModule="WaterReminder" customModuleProvider="target">
-                                <rect key="frame" x="87" y="241" width="240" height="220"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v6o-R4-Fip" customClass="CircleIndicator" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="733-3h-Fkj"/>
+                                    <constraint firstAttribute="height" constant="250" id="xvg-pI-96n"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="backgroundCircleColor">
-                                        <color key="value" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="value" red="0.95294117647058818" green="0.65098039215686276" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="foregroundCircleColor">
                                         <color key="value" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="startGradientColor">
-                                        <color key="value" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="value" red="0.90588235294117647" green="0.49803921568627452" blue="0.40392156862745099" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="color" keyPath="endGradientColor">
-                                        <color key="value" red="0.0" green="1" blue="0.90621522017517409" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="value" red="0.88235294117647056" green="0.37254901960784315" blue="0.25490196078431371" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzW-3l-Lq9" customClass="SettingsButton" customModule="WaterReminder" customModuleProvider="target">
-                                <rect key="frame" x="292" y="757.5" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SzW-3l-Lq9" customClass="SettingsButton" customModule="WaterReminder" customModuleProvider="target">
+                                <rect key="frame" x="291.5" y="757.5" width="50" height="50"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.80392156862745101" blue="0.47450980392156861" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="VeF-cK-YaT"/>
+                                    <constraint firstAttribute="width" constant="50" id="dqR-gI-lD8"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" backgroundImage="chart.pie" catalog="system"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
@@ -121,7 +135,17 @@
                                 </cells>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="0.46808701371006745" green="1" blue="0.6212149153555413" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.95294117647058818" green="0.65098039215686276" blue="0.51372549019607838" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SzW-3l-Lq9" secondAttribute="bottom" constant="54" id="6yX-Gg-xYA"/>
+                            <constraint firstItem="v6o-R4-Fip" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="AcH-c2-q22"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lLn-I7-cL9" secondAttribute="bottom" constant="43" id="EMe-QC-MxF"/>
+                            <constraint firstItem="v6o-R4-Fip" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H5z-DS-pF8"/>
+                            <constraint firstItem="SzW-3l-Lq9" firstAttribute="leading" secondItem="lLn-I7-cL9" secondAttribute="trailing" constant="47" id="Vji-Qc-eZl"/>
+                            <constraint firstItem="lLn-I7-cL9" firstAttribute="leading" secondItem="dmj-8V-UVI" secondAttribute="trailing" constant="47" id="Vkf-OB-z5N"/>
+                            <constraint firstItem="lLn-I7-cL9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hZF-Qk-TyC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="dmj-8V-UVI" secondAttribute="bottom" constant="55.5" id="jbs-dy-osW"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

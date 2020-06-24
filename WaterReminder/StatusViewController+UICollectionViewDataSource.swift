@@ -15,9 +15,9 @@ extension StatusViewController : UICollectionViewDataSource, UICollectionViewDel
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "drink", for: indexPath) as! DrinkCollectionViewCell
-        cell.backgroundColor = .green
+        cell.backgroundColor = UIColor(hex: "#f19066ff")
         cell.backgroundView?.alpha = 0.4
-        cell.layer.cornerRadius = cell.layer.bounds.width / 2
+        //cell.layer.cornerRadius = cell.layer.bounds.width / 2
         cell.nameLabel.text = "\(drinks[indexPath.row])"
         cell.volLabel.text = "\((indexPath.row+1)*50)"
         cell.isUserInteractionEnabled = true
@@ -32,7 +32,7 @@ extension StatusViewController : UICollectionViewDataSource, UICollectionViewDel
 
 extension StatusViewController : UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize{
-        let width = (collectionView.frame.width - 50) / 3
+        let width = (collectionView.frame.width - 5) / 3
         
         return CGSize(width: width, height: width)
     }

@@ -32,6 +32,9 @@ class StatusViewController: UIViewController {
         progressIndicator.progress = 0
         menuCollectionView.delegate = self
         menuCollectionView.dataSource = self
+        let cvLayout = menuCollectionView.collectionViewLayout as? UICollectionViewFlowLayout
+        cvLayout?.minimumInteritemSpacing = 2
+        cvLayout?.minimumLineSpacing = 2
         layout()
         menuCollectionView.isUserInteractionEnabled = true
     }
@@ -40,9 +43,13 @@ class StatusViewController: UIViewController {
         menuCollectionView.translatesAutoresizingMaskIntoConstraints = false
         menuCollectionView.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         menuCollectionView.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
-        bottomConstraint = menuCollectionView.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: 440)
+        bottomConstraint = menuCollectionView.centerYAnchor.constraint(equalTo: view.centerYAnchor)
+        bottomConstraint.constant = 1000
         bottomConstraint.isActive = true
-        menuCollectionView.heightAnchor.constraint(equalToConstant: 440).isActive = true
+        //bottomConstraint.isActive = true
+        //menuCollectionView.heightAnchor.constraint(equalToConstant: 440).isActive = true
+        
+        menuCollectionView.heightAnchor.constraint(equalToConstant: 400).isActive = true
     }
     
     func animateDrinksMenu(){
@@ -52,7 +59,7 @@ class StatusViewController: UIViewController {
             case .open:
                 self.bottomConstraint.constant = 0
             case .closed:
-                self.bottomConstraint.constant = 440
+                self.bottomConstraint.constant = 1000
             }
             self.view.layoutIfNeeded()
         })
@@ -69,7 +76,7 @@ class StatusViewController: UIViewController {
             case .open:
                 self.bottomConstraint.constant = 0
             case .closed:
-                self.bottomConstraint.constant = 440
+                self.bottomConstraint.constant = 1000
                 self.dismiss(animated: true)
             }
         }

@@ -8,13 +8,12 @@
 
 import UIKit
 
-@IBDesignable
 class SettingsButton: UIButton {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
         sharedInit()
-         layer.shadowColor = UIColor.black.cgColor
+        layer.shadowColor = UIColor(hex: "#f78fb3ff")?.cgColor
                      // layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
                       layer.shadowOpacity = 1
                       layer.shadowRadius = 5.0
@@ -24,7 +23,7 @@ class SettingsButton: UIButton {
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         sharedInit()
-        layer.shadowColor = UIColor.black.cgColor
+        layer.shadowColor = UIColor(hex: "#f78fb3ff")?.cgColor
               // layer.shadowOffset = CGSize(width: 0.0, height: 2.0)
                layer.shadowOpacity = 1
                layer.shadowRadius = 5.0
